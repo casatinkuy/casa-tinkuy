@@ -145,7 +145,7 @@
     phAcTitle: "Accesibilidad",
     accBody: "<p class=\"updated\">Última actualización: 30 de septiembre de 2026</p>\n<p>Queremos que todos puedan usar este sitio y disfrutar de una noche de Casa Tinkuy.</p>\n<h2>Este sitio web</h2><p>Buscamos cumplir las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1, nivel AA. El sitio se puede usar con teclado y con lector de pantalla, las imágenes tienen descripciones de texto, todas las páginas están en inglés y español, y las animaciones se reducen cuando tu dispositivo pide menos movimiento.</p>\n<h2>En nuestros eventos</h2><p>Nuestras noches se realizan en espacios aliados. Si tienes preguntas sobre el acceso, los asientos o cualquier cosa que necesites para tu visita, escríbenos antes del evento y coordinaremos con el espacio para ayudarte.</p>\n<h2>Cuéntanos</h2><p>Si algo en este sitio es difícil de usar, escríbenos a <a href=\"mailto:casatinkuylv@gmail.com\">casatinkuylv@gmail.com</a> y lo arreglaremos.</p>",
     evMore: "Todos los encuentros",
-    crPisco: "<span>Aliado de pisco</span> La Diablada Pisco<em>Pisco orgánico del Perú.</em>",
+    crPisco: "<span>Aliado de pisco</span> <a class='addr' href='https://macchupisco.com/main/' target='_blank' rel='noopener'>La Diablada Pisco</a><em>Pisco orgánico del Perú.</em>",
     prPisco: "Cócteles de pisco preparados con La Diablada, un pisco orgánico del Perú.",
     prNote2: "Los nombres de los cócteles se anunciarán más cerca de la fecha.",
     farmCap: "Malibu Fig Farm, California, nuestro aliado agrícola.",
