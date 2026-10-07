@@ -114,7 +114,7 @@
     navEnc: "Encuentros",
     ftPriv: "Política de privacidad",
     ftAcc: "Accesibilidad",
-    crHost: "<span>En</span> Echo Taste &amp; Sound, Arts District",
+    crHost: "<span>En</span> <a class='addr' href='https://www.echotastesound.com' target='_blank' rel='noopener'>Echo Taste &amp; Sound</a>, Arts District",
     crFarm: "<span>Aliado agrícola</span> <a class='addr' href='https://www.instagram.com/intuitiveforagerfarmersmarket/' target='_blank' rel='noopener'>Malibu Fig Farm</a>, California<em>Productos orgánicos, y los ajíes peruanos que nos ayudan a conseguir.</em>",
     phMnLabel: "El menú · Encuentro Nº 1",
     phMnTitle: "Seis tiempos, <em>cuatro cócteles</em>",
