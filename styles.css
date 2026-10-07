@@ -598,3 +598,13 @@
   .doorway { aspect-ratio: auto; }
   .doorway .inside { position: relative; inset: auto; padding: 76px 21% 68px; }
   @media (max-width: 860px) { .doorway .inside { inset: auto; padding: 64px 18% 56px; } }
+
+  .letter-band form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .letter-band input[type=text], .letter-band input[type=email], .letter-band input[type=tel], .letter-band textarea {
+    min-width: 0; width: 100%; box-sizing: border-box; font: 400 16px var(--sans); padding: 12px 14px;
+    border: 1px solid rgba(243,235,221,.5); background: transparent; color: var(--stone); border-radius: 0; }
+  .letter-band textarea, .letter-band input[type=tel] { grid-column: 1 / -1; }
+  .letter-band textarea { resize: vertical; min-height: 48px; line-height: 1.4; }
+  .letter-band textarea::placeholder { color: var(--stone); opacity: .55; }
+  .letter-band form button { grid-column: 1 / -1; justify-self: start; }
+  @media (max-width: 520px) { .letter-band form { grid-template-columns: 1fr; } .letter-band form button { justify-self: stretch; } }

@@ -162,7 +162,10 @@
     dWhen: "Cuándo",
     whenLine: "5:00 a 10:30 PM",
     seatLine: "Cuatro turnos · Llegada 5:00, 6:10, 7:20 u 8:30 PM",
-    calLbl: "Añadir al calendario"
+    calLbl: "Añadir al calendario",
+    nlNm: "Tu nombre",
+    nlTel: "Teléfono (opcional)",
+    nlMsg: "Déjanos un mensaje (opcional)"
   };
   var EN = { rsGo: "Get tickets", f6k: "Contact", heroGo: "Get tickets", nlOk: "You're on the list. You'll be first to know where the hummingbird lands.", nlErr: "Something went wrong. Please try again, or email casatinkuylv@gmail.com." };
   document.querySelectorAll("[data-i18n]").forEach(function (el) { EN[el.dataset.i18n] = el.innerHTML; });

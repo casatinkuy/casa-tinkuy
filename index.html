@@ -117,8 +117,14 @@
         <form id="nl-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="newsletter">
           <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+          <label hidden for="nl-name">Name</label>
+          <input id="nl-name" name="name" type="text" placeholder="Your name" data-i18n-ph="nlNm" required autocomplete="name">
           <label hidden for="nl-email">Email</label>
           <input id="nl-email" name="email" type="email" placeholder="Your email" data-i18n-ph="nlPh" required autocomplete="email">
+          <label hidden for="nl-phone">Phone</label>
+          <input id="nl-phone" name="phone" type="tel" placeholder="Phone (optional)" data-i18n-ph="nlTel" autocomplete="tel">
+          <label hidden for="nl-msg">Message</label>
+          <textarea id="nl-msg" name="message" rows="2" placeholder="Leave us a note (optional)" data-i18n-ph="nlMsg"></textarea>
           <button type="submit" data-i18n="nlB">Save my seat</button>
         </form>
         <p class="ok" id="nl-ok" aria-live="polite"></p>
