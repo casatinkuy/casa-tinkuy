@@ -627,3 +627,6 @@
   }
   .letter-band::before { content: ""; display: block; width: min(960px, 100%); height: 34px; margin: 0 auto clamp(28px, 4vw, 44px);
     background: url(images/step-divider.svg) center / 100% 100% no-repeat; }
+
+  .hero::before, .pagehead::before, .letter-band::before { content: none; display: none; }
+  @media (max-width: 760px) { .hero { padding-bottom: clamp(64px, 10vw, 120px); } }
