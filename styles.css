@@ -608,3 +608,22 @@
   .letter-band textarea::placeholder { color: var(--stone); opacity: .55; }
   .letter-band form button { grid-column: 1 / -1; justify-self: start; }
   @media (max-width: 520px) { .letter-band form { grid-template-columns: 1fr; } .letter-band form button { justify-self: stretch; } }
+
+  /* ---------- Stone wall texture and stairs (Oct 9) ---------- */
+  .hero, .pagehead { position: relative; isolation: isolate; background:
+      linear-gradient(118deg, transparent 30%, rgba(243,214,170,.08) 37%, rgba(243,214,170,.08) 41%, transparent 47%, transparent 52%, rgba(10,4,5,.32) 60%, rgba(10,4,5,.32) 66%, transparent 74%),
+      radial-gradient(ellipse 80% 70% at 30% 30%, #4A2629 0%, #3E2124 55%, #33191C 100%); }
+  .hero::after, .pagehead::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background: url(images/plaster.jpg) 0 0 / 860px auto repeat; opacity: .32; mix-blend-mode: overlay; }
+  .hero::before { content: ""; position: absolute; right: 0; bottom: 0; width: 52%; height: 34%; z-index: -1;
+    background: url(images/steps.svg) right bottom / contain no-repeat; }
+  .pagehead::before { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 260px; z-index: -1;
+    background: url(images/step-window.svg) right center / auto 100% no-repeat; }
+  @media (max-width: 760px) {
+    .hero { padding-bottom: 150px; }
+    .hero::before { width: 100%; height: 110px; }
+    .pagehead::before { width: 110px; opacity: .8; }
+    .hero::after, .pagehead::after { background-size: 560px auto; }
+  }
+  .letter-band::before { content: ""; display: block; width: min(960px, 100%); height: 34px; margin: 0 auto clamp(28px, 4vw, 44px);
+    background: url(images/step-divider.svg) center / 100% 100% no-repeat; }
