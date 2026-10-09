@@ -630,3 +630,6 @@
 
   .hero::before, .pagehead::before, .letter-band::before { content: none; display: none; }
   @media (max-width: 760px) { .hero { padding-bottom: clamp(64px, 10vw, 120px); } }
+
+  .hero::before, .pagehead::before, .letter-band::before { content: none; display: none; }
+  @media (max-width: 760px) { .hero { padding-bottom: clamp(64px, 10vw, 120px); } }
