@@ -644,3 +644,15 @@
       color-mix(in srgb, var(--sec-bg) 82%, transparent) 75%,
       var(--sec-bg) 100%); }
   @media (max-width: 760px) { .menu-dinner::before { top: -36px; height: 36px; } }
+
+  .threshold { --sec-bg: var(--plum); } .enc, .legal { --sec-bg: var(--night); }
+  .threshold, .enc, .legal { position: relative; }
+  .threshold::before, .enc::before, .legal::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -56px; height: 56px; z-index: 1; pointer-events: none;
+    background: linear-gradient(to bottom,
+      color-mix(in srgb, var(--sec-bg) 0%, transparent) 0%,
+      color-mix(in srgb, var(--sec-bg) 12%, transparent) 25%,
+      color-mix(in srgb, var(--sec-bg) 45%, transparent) 50%,
+      color-mix(in srgb, var(--sec-bg) 82%, transparent) 75%,
+      var(--sec-bg) 100%); }
+  @media (max-width: 760px) { .threshold::before, .enc::before, .legal::before { top: -36px; height: 36px; } }
