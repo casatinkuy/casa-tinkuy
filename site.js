@@ -63,7 +63,7 @@
     p2r: "Chef Ejecutivo", p2cap: "Con el Chef Thomas Keller en Bouchon, Las Vegas.", p2o: "Lima, Perú → Las Vegas",
     p2t: "<p>Michael aprendió a cocinar en casa, viendo a su padre preparar ceviche, anticuchos y otros platos tradicionales peruanos que sus padres trajeron de Lima a Las Vegas. Fueron las reuniones familiares las que lo atraparon. Con los años, él era quien cocinaba para la familia y los amigos, mucho antes de que una cocina lo contratara.</p><p>Empezó en las cocinas de Las Vegas como lavaplatos y fue subiendo. Cocinero de línea en Honey Salt. Chef de pastas en el equipo de apertura de Giada's. Bouchon en el Venetian, bajo el Chef Thomas Keller. Casa Playa en el Wynn. Quince años en total. Hoy es Sous Chef Ejecutivo de Poodle Room en el Fontainebleau.</p><p>En Casa Tinkuy cocina la comida con la que creció, a través de todo lo que ha aprendido desde entonces, haciéndola suya.</p>",
     nxLabel: "Hacia dónde viaja la casa", nxTitle: "Pop-ups, residencias y colaboraciones, empezando en Las Vegas",
-    nxText: "Casa Tinkuy empieza en Las Vegas y está hecha para moverse, reuniendo a chefs, mixólogos y músicos latinoamericanos.",
+    nxText: "Casa Tinkuy está hecha para moverse, reuniendo a chefs, mixólogos y artistas latinoamericanos.",
     nov: "Noviembre 2026", c1: "Los Ángeles", c2: "Nueva York",
     soon1: "Próximamente", soon2: "Próximamente", soon3: "Próximamente", soon4: "Próximamente", soon5: "Próximamente",
     psLabel: "Prensa", psTitle: "Casa Tinkuy en breve",
