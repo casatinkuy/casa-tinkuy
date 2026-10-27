@@ -699,3 +699,11 @@
 .na-line img { display: block; width: 88px; height: 88px; object-fit: cover; border: 1px solid rgba(200, 162, 78, 0.35); }
 .na-line p { margin: 0; }
 @media (max-width: 760px) { .program-top { grid-template-columns: 1fr; } }
+
+/* Order: text, photos, then the non-alcoholic line on phones; side by side on laptops */
+.program-top { grid-template-areas: "head photos" "na photos"; grid-template-rows: auto 1fr; row-gap: 22px; }
+.program-top > .head { grid-area: head; }
+.program-top > .cocktail-pair { grid-area: photos; }
+.program-top > .na-line { grid-area: na; align-self: start; }
+@media (max-width: 760px) { .program-top { grid-template-areas: "head" "photos" "na"; grid-template-rows: auto; } }
+.program .na-line p.pisco { font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--stone); }
