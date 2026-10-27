@@ -19,7 +19,7 @@
     evText: "Nuestro primer pop-up es una cena peruana de seis tiempos, acompañada de cuatro cócteles inspirados en la costa, la sierra y la selva del Perú.",
     ev1k: "Cena", ev1v: "Un menú de degustación peruano de seis tiempos del Chef Michael Palomino",
     ev2k: "La barra", ev2v: "Cuatro cócteles peruanos del mixólogo Angelo Palomino",
-    ev3k: "Después de la cena", ev3v: "Un lounge con música en vivo",
+    ev3k: "Después de la cena", ev3v: "Un lounge después de la cena",
     dMonth: "Noviembre", dDay: "Martes · 2026", dWhere: "Dónde", dSeat: "Turnos", dSeatV: "Turnos escalonados durante la noche",
     prLabel: "El programa", prTitle: "Cuatro cócteles, tres regiones",
     prText: "El Perú sube desde la costa desértica hasta las cumbres andinas y baja hacia la Amazonía en unos pocos cientos de kilómetros. Los cuatro cócteles siguen esa ruta, inspirados en los ingredientes y las tradiciones de cada paisaje.",
