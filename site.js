@@ -1,5 +1,6 @@
   // Fill these in when ready; the page updates itself.
   var TICKET_URL = "/reserve";   // forwards to the Square booking page (see _redirects)
+  var SOLD_OUT = false;  // set to true when all seatings are full: buttons switch to the waitlist
   var PRESS_EMAIL = "casatinkuylv@gmail.com";  // e.g. press@casatinkuy.com
 
   var ES = {
@@ -42,11 +43,13 @@
     w1p: "Seis tiempos del Chef Michael Palomino, construidos alrededor del ají amarillo, el ají que está en el corazón de la cocina peruana, con cuatro cócteles peruanos de Angelo Palomino, servidos en turnos escalonados durante la noche.",
     w1s: "Productos orgánicos y ajíes peruanos frescos de Malibu Fig Farm, en California.",
     w2tag: "Sin reserva", w2t: "La Barra",
-    w2p: "No necesitas reserva. Ven por un cóctel peruano durante la cena y quédate para el lounge con música en vivo. Seis asientos en la barra y un pequeño espacio para estar de pie.",
+    w2p: "No necesitas reserva para los cócteles. Ven por un cóctel peruano durante la cena y quédate para el lounge con música en vivo. Siete asientos en la barra, un par de mesas altas y un sofá lounge, por orden de llegada.",
+    w2note: "La cena de seis tiempos se sirve solo con reserva. En la barra no se sirve comida.",
     heroBtn: "Reservas muy pronto", heroGo: "Reserva tu lugar",
     fqLabel: "Bueno saber", fqTitle: "Preguntas",
     q1: "¿Dónde es?", a1: "Echo Taste &amp; Sound, 1301 S Main St, Suite 160, Las Vegas, NV 89104, en el Arts District.",
-    q2: "¿Puedo ir solo a la barra?", a2: "Sí. Durante la cena, la barra recibe a quienes lleguen sin reserva para tomar cócteles. El espacio es limitado: seis asientos en la barra y un pequeño espacio para estar de pie, por orden de llegada.",
+    q2: "¿Puedo ir solo a la barra?", a2: "Sí. Durante la cena, la barra recibe a quienes lleguen sin reserva para tomar cócteles. El espacio es limitado: siete asientos en la barra, un par de mesas altas y un sofá lounge, por orden de llegada.",
+    q7: "¿Puedo pedir comida en la barra?", a7: "La barra sirve solo cócteles. El menú de seis tiempos del Chef Michael se sirve únicamente a los invitados con reserva.",
     q6: "¿Es solo para mayores de 21?", a6: "Sí. Casa Tinkuy es un evento para mayores de 21 años, tanto la cena como la barra. Trae un documento de identidad con foto.",
     q3: "¿Cómo funcionan las reservas?", a3: "Reserva en línea con un depósito de $50 por persona, que se reembolsa completo a tu tarjeta después de la cena. La cena cuesta $180 por persona y se paga en la mesa, con los cócteles incluidos; no incluye impuestos ni propina. Si cancelas con al menos 72 horas de anticipación, te devolvemos el depósito completo. Las ausencias y cancelaciones tardías pierden el depósito.",
     q4: "¿Pueden adaptarse a alergias o necesidades alimentarias?", a4: "Cuéntanos sobre cualquier alergia o necesidad alimentaria al hacer tu reserva y te diremos qué podemos adaptar. El menú está construido alrededor del ají amarillo, así que avísanos si eres sensible al picante.",
@@ -163,13 +166,17 @@
     whenLine: "4:30 a 10:30 PM",
     seatLine: "Tres turnos · 4:30, 6:30 u 8:30 PM",
     bookBtn: "Reserva tu lugar",
+    wlBtn: "Unirme a la lista de espera", wlParty: "Personas", wlJoin: "Lista de espera",
+    soTitle: "La cena está <em>completa</em>",
+    soText: "Únete a la lista de espera y te avisaremos si se libera un lugar. La barra sigue abierta a quienes lleguen sin reserva, solo para cócteles.",
+    wlOk: "Estás en la lista de espera. Te escribiremos si se libera un lugar.",
     w1price: "$180 por persona, cócteles incluidos · Depósito de $50 para reservar",
     calLbl: "Añadir al calendario",
     nlNm: "Tu nombre",
     nlTel: "Teléfono (opcional)",
     nlMsg: "Déjanos un mensaje (opcional)"
   };
-  var EN = { rsGo: "Reserve your seat", f6k: "Contact", heroGo: "Reserve your seat", nlOk: "You're on the list. You'll be first to know where the hummingbird lands.", nlErr: "Something went wrong. Please try again, or email casatinkuylv@gmail.com." };
+  var EN = { wlJoin: "Join the waitlist", soTitle: "The dinner is <em>fully booked</em>", soText: "Join the waitlist and we'll let you know if a seat opens up. Walk-ins are still welcome at the bar for cocktails.", wlOk: "You're on the waitlist. We'll write to you if a seat opens up.", rsGo: "Reserve your seat", f6k: "Contact", heroGo: "Reserve your seat", nlOk: "You're on the list. You'll be first to know where the hummingbird lands.", nlErr: "Something went wrong. Please try again, or email casatinkuylv@gmail.com." };
   document.querySelectorAll("[data-i18n]").forEach(function (el) { EN[el.dataset.i18n] = el.innerHTML; });
   document.querySelectorAll("[data-i18n-ph]").forEach(function (el) { EN[el.dataset.i18nPh] = el.placeholder; });
 
@@ -200,6 +207,19 @@
       if (hb) {
         hb.href = TICKET_URL; hb.target = "_blank"; hb.rel = "noopener"; hb.classList.remove("soon");
         hb.innerHTML = (current === "es" ? ES : EN).heroGo;
+      }
+    }
+    if (SOLD_OUT) {
+      var d0 = current === "es" ? ES : EN;
+      document.querySelectorAll(".book-link, #ticket-btn, #hero-btn").forEach(function (a) {
+        a.href = "november-10.html#tickets"; a.removeAttribute("target"); a.classList.remove("soon"); a.innerHTML = d0.wlJoin;
+      });
+      var wl = document.getElementById("waitlist");
+      if (wl) {
+        wl.hidden = false;
+        var tb = document.getElementById("ticket-btn"); if (tb) tb.hidden = true;
+        var t = document.querySelector("[data-i18n=rsTitle]"); if (t) t.innerHTML = d0.soTitle;
+        var x = document.querySelector("[data-i18n=rsText]"); if (x) x.innerHTML = d0.soText;
       }
     }
     if (PRESS_EMAIL && document.getElementById("press-contact")) {
@@ -234,6 +254,21 @@
       var btn = f.querySelector("button"); btn.disabled = true;
       fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(f)).toString() })
         .then(function (r) { if (!r.ok) throw new Error(r.status); ok.textContent = d.nlOk; f.reset(); })
+        .catch(function () { ok.textContent = d.nlErr; })
+        .finally(function () { btn.disabled = false; });
+    });
+  })();
+
+  // Waitlist: Netlify Forms, shown only when SOLD_OUT is true
+  (function () {
+    var f = document.getElementById("wl-form"), ok = document.getElementById("wl-ok");
+    if (!f) return;
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = current === "es" ? ES : EN;
+      var btn = f.querySelector("button"); btn.disabled = true;
+      fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(f)).toString() })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); ok.textContent = d.wlOk; f.reset(); })
         .catch(function () { ok.textContent = d.nlErr; })
         .finally(function () { btn.disabled = false; });
     });

@@ -661,3 +661,13 @@
 .doorway dd.book { margin-top: 16px; }
 .doorway dd.book .btn { padding: 13px 18px; font-size: 11px; letter-spacing: 0.2em; white-space: nowrap; }
 .way p.price { color: var(--gold); font-size: 14px; letter-spacing: 0.04em; margin-top: 6px; }
+
+/* Top-of-page reserve button and waitlist */
+.pagehead .head-cta { margin-top: 26px; }
+.waitlist { width: 100%; max-width: 560px; }
+.waitlist form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.waitlist input { font: 400 16px var(--sans); padding: 12px 14px; border: 1px solid rgba(243,235,221,.5); background: transparent; color: var(--stone); border-radius: 0; min-width: 0; }
+.waitlist input::placeholder { color: var(--stone); opacity: .55; }
+.waitlist button { grid-column: 1 / -1; border: 0; cursor: pointer; }
+.waitlist .ok { margin-top: 12px; }
+@media (max-width: 520px) { .waitlist form { grid-template-columns: 1fr; } }
