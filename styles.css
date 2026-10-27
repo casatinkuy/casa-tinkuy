@@ -671,3 +671,11 @@
 .waitlist button { grid-column: 1 / -1; border: 0; cursor: pointer; }
 .waitlist .ok { margin-top: 12px; }
 @media (max-width: 520px) { .waitlist form { grid-template-columns: 1fr; } }
+
+/* Menu page: arc paragraph and photos */
+.menu-arc { font-family: var(--serif); font-size: clamp(20px, 2.2vw, 26px); line-height: 1.45; color: var(--stone); }
+.menu-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.menu-photos figure { margin: 0; }
+.menu-photos img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid rgba(200, 162, 78, 0.35); }
+.menu-photos figcaption { grid-column: 1 / -1; font-size: 13px; color: var(--gold-dim); font-style: italic; }
+.menu-note { font-size: 14px; letter-spacing: 0.04em; color: var(--gold); }
