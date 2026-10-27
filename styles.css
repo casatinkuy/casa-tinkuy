@@ -689,3 +689,6 @@
 .maker-note p { font-family: var(--serif); font-size: clamp(18px, 1.9vw, 22px); line-height: 1.5; color: var(--stone); }
 .maker-note cite { display: block; margin-top: 10px; font-style: normal; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
 @media (max-width: 760px) { .program-top { grid-template-columns: 1fr; } }
+
+/* Match section label color: "The cocktails" in gold like "The dinner" */
+.program .head .label { color: var(--gold); }
