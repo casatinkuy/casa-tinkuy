@@ -127,6 +127,7 @@
     mnSoon: "El menú completo de seis tiempos se compartirá la semana de la cena.",
     mnArc: "Seis tiempos, un solo ají. La cena empieza fresca y ligera y va creciendo a lo largo de la noche, mostrando el ají amarillo de una forma distinta en cada tiempo: vivo, intenso, untuoso y, al final, dulce, en un postre construido alrededor del mismo ají.",
     mnCap: "De la degustación del Encuentro Nº 1.",
+    angNote: "Aprendí lo que es la hospitalidad en la cocina de mi abuela Ofelia en Lima, desgranando arvejas a su lado mientras ella cocinaba. Todavía preparo un cóctel como ella preparaba una comida: con intención, equilibrio y sentido de lugar.",
     prNA: "¿No bebes alcohol? Cada cóctel tiene su versión sin alcohol, hecha con el mismo cuidado.",
     mnAllergy: "Cuéntanos sobre cualquier alergia o necesidad alimentaria al hacer tu reserva. <a href=\"november-10.html#faq\">Preguntas</a>",
     mnKey: "V vegetariano · GF sin gluten",

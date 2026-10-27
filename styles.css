@@ -679,3 +679,13 @@
 .menu-photos img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid rgba(200, 162, 78, 0.35); }
 .menu-photos figcaption { grid-column: 1 / -1; font-size: 13px; color: var(--gold-dim); font-style: italic; }
 .menu-note { font-size: 14px; letter-spacing: 0.04em; color: var(--gold); }
+
+/* Menu page: cocktail section photo and note */
+.program-top { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: clamp(32px, 5vw, 72px); align-items: start; margin-bottom: clamp(40px, 6vw, 72px); }
+.program-top .head { margin-bottom: 0; }
+.cocktail-photo { margin: 0; }
+.cocktail-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid rgba(200, 162, 78, 0.35); }
+.maker-note { margin: 4px 0; padding-left: 18px; border-left: 1px solid var(--gold); }
+.maker-note p { font-family: var(--serif); font-size: clamp(18px, 1.9vw, 22px); line-height: 1.5; color: var(--stone); }
+.maker-note cite { display: block; margin-top: 10px; font-style: normal; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+@media (max-width: 760px) { .program-top { grid-template-columns: 1fr; } }
