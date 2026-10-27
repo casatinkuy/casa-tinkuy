@@ -656,3 +656,8 @@
       color-mix(in srgb, var(--sec-bg) 82%, transparent) 75%,
       var(--sec-bg) 100%); }
   @media (max-width: 760px) { .threshold::before, .enc::before, .legal::before { top: -36px; height: 36px; } }
+
+/* Reserve button inside the date card, price line on The Dinner */
+.doorway dd.book { margin-top: 16px; }
+.doorway dd.book .btn { padding: 13px 18px; font-size: 11px; letter-spacing: 0.2em; white-space: nowrap; }
+.way p.price { color: var(--gold); font-size: 14px; letter-spacing: 0.04em; margin-top: 6px; }

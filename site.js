@@ -162,6 +162,8 @@
     dWhen: "Cuándo",
     whenLine: "4:30 a 10:30 PM",
     seatLine: "Tres turnos · 4:30, 6:30 u 8:30 PM",
+    bookBtn: "Reserva tu lugar",
+    w1price: "$180 por persona, cócteles incluidos · Depósito de $50 para reservar",
     calLbl: "Añadir al calendario",
     nlNm: "Tu nombre",
     nlTel: "Teléfono (opcional)",
