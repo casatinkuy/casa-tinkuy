@@ -76,7 +76,7 @@
     f5k: "Formato", f5v: "Cena peruana de seis tiempos con cuatro cócteles, servida en turnos escalonados, y un lounge con música en vivo. Mayores de 21 años.",
     f6k: "Contacto",
     rsLabel: "Cupos limitados", rsTitle: "Sé el primero en cruzar <em>la puerta</em>",
-    rsText: "Tres turnos: 4:30, 6:30 y 8:30 PM. Reserva con un depósito de $50 por persona, reembolsado después de la cena.",
+    rsText: "Tres turnos: 4:30, 6:30 y 8:30 PM. Un depósito de $50 asegura tu lugar y se te devuelve a tu tarjeta después de la cena.",
     rsSoon: "Sigue a @casatinkuylv para novedades", rsGo: "Reserva tu lugar",
     navH: "La Casa",
     navM: "Los Creadores",
