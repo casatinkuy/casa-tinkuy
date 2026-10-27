@@ -692,3 +692,10 @@
 
 /* Match section label color: "The cocktails" in gold like "The dinner" */
 .program .head .label { color: var(--gold); }
+
+/* Cocktail section: two photos like the dinner, chicha morada beside the non-alcoholic line */
+.program-top { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.na-line { display: grid; grid-template-columns: 88px 1fr; gap: 16px; align-items: center; }
+.na-line img { display: block; width: 88px; height: 88px; object-fit: cover; border: 1px solid rgba(200, 162, 78, 0.35); }
+.na-line p { margin: 0; }
+@media (max-width: 760px) { .program-top { grid-template-columns: 1fr; } }
