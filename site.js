@@ -1,9 +1,9 @@
   // Fill these in when ready; the page updates itself.
-  var TICKET_URL = "";   // e.g. your Tock, Eventbrite or SevenRooms event link
+  var TICKET_URL = "/reserve";   // forwards to the Square booking page (see _redirects)
   var PRESS_EMAIL = "casatinkuylv@gmail.com";  // e.g. press@casatinkuy.com
 
   var ES = {
-    nav1: "La Casa", nav2: "10 de noviembre", nav3: "El Programa", nav4: "Los Creadores", nav5: "Prensa", nav6: "Entradas",
+    nav1: "La Casa", nav2: "10 de noviembre", nav3: "El Programa", nav4: "Los Creadores", nav5: "Prensa", nav6: "Reservar",
     heroLabel: "Las Vegas · Raíces en Lima",
     heroTitle: "La Casa del <em>Encuentro</em>",
     heroLede: "Casa Tinkuy reúne la cocina, la coctelería, la música y las historias del Perú en una sola mesa. Un chef y un mixólogo, dos hermanos nacidos en Lima, que crean noches donde los ingredientes ancestrales se encuentran con una ciudad moderna.",
@@ -38,18 +38,18 @@
     wk2t: "Colaboraciones con marcas", wk2p: "Para marcas de destilados, gastronomía y hospitalidad que quieran ser parte de una mesa peruana en Las Vegas.",
     wk3t: "Espacios y artistas", wk3p: "Para restaurantes, bares y hoteles que quieran recibir una noche de Casa Tinkuy, y para chefs, músicos y artistas que quieran crearla con nosotros.",
     wkCta: "Escríbenos a",
-    w1tag: "Con entrada", w1t: "La Cena",
+    w1tag: "Con reserva", w1t: "La Cena",
     w1p: "Seis tiempos del Chef Michael Palomino, construidos alrededor del ají amarillo, el ají que está en el corazón de la cocina peruana, con cuatro cócteles peruanos de Angelo Palomino, servidos en turnos escalonados durante la noche.",
     w1s: "Productos orgánicos y ajíes peruanos frescos de Malibu Fig Farm, en California.",
     w2tag: "Sin reserva", w2t: "La Barra",
-    w2p: "No necesitas entrada. Ven por un cóctel peruano durante la cena y quédate para el lounge con música en vivo. Seis asientos en la barra y un pequeño espacio para estar de pie.",
-    heroBtn: "Entradas muy pronto", heroGo: "Comprar entradas",
+    w2p: "No necesitas reserva. Ven por un cóctel peruano durante la cena y quédate para el lounge con música en vivo. Seis asientos en la barra y un pequeño espacio para estar de pie.",
+    heroBtn: "Reservas muy pronto", heroGo: "Reserva tu lugar",
     fqLabel: "Bueno saber", fqTitle: "Preguntas",
     q1: "¿Dónde es?", a1: "Echo Taste &amp; Sound, 1301 S Main St, Suite 160, Las Vegas, NV 89104, en el Arts District.",
-    q2: "¿Puedo ir solo a la barra?", a2: "Sí. Durante la cena, la barra recibe a quienes lleguen sin reserva para tomar cócteles, sin necesidad de entrada. El espacio es limitado: seis asientos en la barra y un pequeño espacio para estar de pie, por orden de llegada.",
+    q2: "¿Puedo ir solo a la barra?", a2: "Sí. Durante la cena, la barra recibe a quienes lleguen sin reserva para tomar cócteles. El espacio es limitado: seis asientos en la barra y un pequeño espacio para estar de pie, por orden de llegada.",
     q6: "¿Es solo para mayores de 21?", a6: "Sí. Casa Tinkuy es un evento para mayores de 21 años, tanto la cena como la barra. Trae un documento de identidad con foto.",
-    q3: "¿Cuándo salen las entradas?", a3: "Muy pronto. Sigue a <a href=\"https://www.instagram.com/casatinkuylv/\" target=\"_blank\" rel=\"noopener\">@casatinkuylv</a> en Instagram para enterarte primero.",
-    q4: "¿Pueden adaptarse a alergias o necesidades alimentarias?", a4: "Cuéntanos sobre cualquier alergia o necesidad alimentaria al comprar tu entrada y te diremos qué podemos adaptar. El menú está construido alrededor del ají amarillo, así que avísanos si eres sensible al picante.",
+    q3: "¿Cómo funcionan las reservas?", a3: "Reserva en línea con un depósito de $50 por persona, que se reembolsa completo a tu tarjeta después de la cena. La cena cuesta $180 por persona y se paga en la mesa, con los cócteles incluidos; no incluye impuestos ni propina. Si cancelas con al menos 72 horas de anticipación, te devolvemos el depósito completo. Las ausencias y cancelaciones tardías pierden el depósito.",
+    q4: "¿Pueden adaptarse a alergias o necesidades alimentarias?", a4: "Cuéntanos sobre cualquier alergia o necesidad alimentaria al hacer tu reserva y te diremos qué podemos adaptar. El menú está construido alrededor del ají amarillo, así que avísanos si eres sensible al picante.",
     q5: "¿Otras preguntas?", a5: "Escríbenos a <a href=\"mailto:casatinkuylv@gmail.com\">casatinkuylv@gmail.com</a>.",
     nlK: "Guárdame un lugar", nlT: "Dónde se posará el colibrí", nlS: "Casa Tinkuy se mueve. Entérate primero de la próxima fecha y lugar.",
     nlPh: "Tu correo", nlB: "Guardar mi lugar", nlA: "Entrada individual",
@@ -73,8 +73,8 @@
     f5k: "Formato", f5v: "Cena peruana de seis tiempos con cuatro cócteles, servida en turnos escalonados, y un lounge con música en vivo. Mayores de 21 años.",
     f6k: "Contacto",
     rsLabel: "Cupos limitados", rsTitle: "Sé el primero en cruzar <em>la puerta</em>",
-    rsText: "Las entradas para el 10 de noviembre saldrán pronto. Síguenos en Instagram para enterarte primero.",
-    rsSoon: "Sigue a @casatinkuylv para las entradas", rsGo: "Comprar entradas",
+    rsText: "Tres turnos: 4:30, 6:30 y 8:30 PM. Reserva con un depósito de $50 por persona, reembolsado después de la cena.",
+    rsSoon: "Sigue a @casatinkuylv para novedades", rsGo: "Reserva tu lugar",
     navH: "La Casa",
     navM: "Los Creadores",
     navE: "Encuentro Nº 1",
@@ -122,7 +122,7 @@
     mnTitle: "Del Chef Michael Palomino",
     mnText: "Seis tiempos construidos alrededor del ají amarillo, el ají que está en el corazón de la cocina peruana.",
     mnSoon: "El menú completo se publicará más cerca de la fecha.",
-    mnAllergy: "Cuéntanos sobre cualquier alergia o necesidad alimentaria al comprar tu entrada. <a href=\"november-10.html#faq\">Preguntas</a>",
+    mnAllergy: "Cuéntanos sobre cualquier alergia o necesidad alimentaria al hacer tu reserva. <a href=\"november-10.html#faq\">Preguntas</a>",
     mnKey: "V vegetariano · GF sin gluten",
     prLabel2: "Los cócteles",
     prTitle2: "De Angelo Palomino",
@@ -140,7 +140,7 @@
     enEmpty: "Aquí vivirán las fotos y las historias de cada encuentro.",
     phPrLabel: "Legal",
     phPrTitle: "Política de privacidad",
-    privBody: "<p class=\"updated\">Última actualización: 7 de octubre de 2026</p>\n<h2>Quiénes somos</h2><p>Casa Tinkuy es un proyecto de cocina y coctelería peruana con base en Las Vegas, Nevada. Puedes escribirnos a <a href=\"mailto:casatinkuylv@gmail.com\">casatinkuylv@gmail.com</a>.</p>\n<h2>Qué información recopilamos</h2><p>La que tú nos das: si te unes a nuestra lista, tu nombre, tu correo electrónico y, si decides compartirlos, tu teléfono y un mensaje. También recopilamos información anónima sobre cómo se usa el sitio, como las páginas vistas, los enlaces en los que se hace clic, el tipo de dispositivo y la ciudad o país aproximados.</p>\n<h2>Cómo la usamos</h2><p>Para contarte sobre los próximos eventos de Casa Tinkuy y responder tus mensajes. No vendemos, alquilamos ni compartimos tu información con nadie para su propio marketing.</p>\n<h2>Quiénes nos ayudan</h2><p>Nuestro sitio está alojado en Netlify, que recibe las inscripciones a nuestra lista en nuestro nombre. Cuando haya entradas disponibles, las compras las gestionará nuestro proveedor de venta de entradas, bajo su propia política de privacidad.</p>\n<h2>Cookies y analítica</h2><p>Usamos Google Analytics y Microsoft Clarity para entender cómo las personas encuentran y usan el sitio, y así mejorarlo. Estos servicios usan cookies y pueden registrar actividad anónima, como clics y desplazamientos. No nos dicen quién eres y no los usamos para publicidad. El sitio también recuerda en tu navegador el idioma que elegiste, inglés o español. Las tipografías se cargan desde Google Fonts, que puede recibir tu dirección IP al cargar una página.</p>\n<h2>Tus opciones</h2><p>Para salir de nuestra lista, o para saber qué información tenemos sobre ti, escríbenos y nos encargamos.</p>\n<h2>Edad</h2><p>Nuestros eventos son para mayores de 21 años, y este sitio no está dirigido a menores de 21.</p>\n<h2>Cambios</h2><p>Si esta política cambia, la actualizaremos aquí y cambiaremos la fecha de arriba.</p>",
+    privBody: "<p class=\"updated\">Última actualización: 7 de octubre de 2026</p>\n<h2>Quiénes somos</h2><p>Casa Tinkuy es un proyecto de cocina y coctelería peruana con base en Las Vegas, Nevada. Puedes escribirnos a <a href=\"mailto:casatinkuylv@gmail.com\">casatinkuylv@gmail.com</a>.</p>\n<h2>Qué información recopilamos</h2><p>La que tú nos das: si te unes a nuestra lista, tu nombre, tu correo electrónico y, si decides compartirlos, tu teléfono y un mensaje. También recopilamos información anónima sobre cómo se usa el sitio, como las páginas vistas, los enlaces en los que se hace clic, el tipo de dispositivo y la ciudad o país aproximados.</p>\n<h2>Cómo la usamos</h2><p>Para contarte sobre los próximos eventos de Casa Tinkuy y responder tus mensajes. No vendemos, alquilamos ni compartimos tu información con nadie para su propio marketing.</p>\n<h2>Quiénes nos ayudan</h2><p>Nuestro sitio está alojado en Netlify, que recibe las inscripciones a nuestra lista en nuestro nombre. Las reservas y los pagos los gestiona Square, bajo su propia política de privacidad.</p>\n<h2>Cookies y analítica</h2><p>Usamos Google Analytics y Microsoft Clarity para entender cómo las personas encuentran y usan el sitio, y así mejorarlo. Estos servicios usan cookies y pueden registrar actividad anónima, como clics y desplazamientos. No nos dicen quién eres y no los usamos para publicidad. El sitio también recuerda en tu navegador el idioma que elegiste, inglés o español. Las tipografías se cargan desde Google Fonts, que puede recibir tu dirección IP al cargar una página.</p>\n<h2>Tus opciones</h2><p>Para salir de nuestra lista, o para saber qué información tenemos sobre ti, escríbenos y nos encargamos.</p>\n<h2>Edad</h2><p>Nuestros eventos son para mayores de 21 años, y este sitio no está dirigido a menores de 21.</p>\n<h2>Cambios</h2><p>Si esta política cambia, la actualizaremos aquí y cambiaremos la fecha de arriba.</p>",
     phAcLabel: "Legal",
     phAcTitle: "Accesibilidad",
     accBody: "<p class=\"updated\">Última actualización: 7 de octubre de 2026</p>\n<p>Queremos que todos puedan usar este sitio y disfrutar de una noche de Casa Tinkuy.</p>\n<h2>Este sitio web</h2><p>Buscamos cumplir las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1, nivel AA. El sitio se puede usar con teclado y con lector de pantalla, las imágenes tienen descripciones de texto, todas las páginas están en inglés y español, y las animaciones se reducen cuando tu dispositivo pide menos movimiento.</p>\n<h2>En nuestros eventos</h2><p>Nuestras noches se realizan en espacios aliados. Si tienes preguntas sobre el acceso, los asientos o cualquier cosa que necesites para tu visita, escríbenos antes del evento y coordinaremos con el espacio para ayudarte.</p>\n<h2>Cuéntanos</h2><p>Si algo en este sitio es difícil de usar, escríbenos a <a href=\"mailto:casatinkuylv@gmail.com\">casatinkuylv@gmail.com</a> y lo arreglaremos.</p>",
@@ -160,14 +160,14 @@
     alP: "Si tienes alguna alergia alimentaria grave o una restricción alimentaria, por favor <a href=\"mailto:casatinkuylv@gmail.com\">contáctanos</a> antes de reservar para conversar sobre las adaptaciones que podrían ser posibles. Nuestro menú incluye ingredientes como gluten, lácteos, aliáceas (como ajo y cebolla), mariscos, frutos secos y ají amarillo. Avísanos también si eres sensible al picante. Aunque siempre haremos lo posible por atender a nuestros invitados, algunos platos del menú pueden tener modificaciones limitadas.",
     farm2Cap: "Malibu Fig Farm, California.",
     dWhen: "Cuándo",
-    whenLine: "5:00 a 10:30 PM",
-    seatLine: "Cuatro turnos · Llegada 5:00, 6:10, 7:20 u 8:30 PM",
+    whenLine: "4:30 a 10:30 PM",
+    seatLine: "Tres turnos · 4:30, 6:30 u 8:30 PM",
     calLbl: "Añadir al calendario",
     nlNm: "Tu nombre",
     nlTel: "Teléfono (opcional)",
     nlMsg: "Déjanos un mensaje (opcional)"
   };
-  var EN = { rsGo: "Get tickets", f6k: "Contact", heroGo: "Get tickets", nlOk: "You're on the list. You'll be first to know where the hummingbird lands.", nlErr: "Something went wrong. Please try again, or email casatinkuylv@gmail.com." };
+  var EN = { rsGo: "Reserve your seat", f6k: "Contact", heroGo: "Reserve your seat", nlOk: "You're on the list. You'll be first to know where the hummingbird lands.", nlErr: "Something went wrong. Please try again, or email casatinkuylv@gmail.com." };
   document.querySelectorAll("[data-i18n]").forEach(function (el) { EN[el.dataset.i18n] = el.innerHTML; });
   document.querySelectorAll("[data-i18n-ph]").forEach(function (el) { EN[el.dataset.i18nPh] = el.placeholder; });
 
