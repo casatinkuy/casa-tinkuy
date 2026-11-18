@@ -1,5 +1,5 @@
   // Fill these in when ready; the page updates itself.
-  var TICKET_URL = "/reserve";   // forwards to the Square booking page (see _redirects)
+  var TICKET_URL = "";   // no event on sale. For the next one, set to "/reserve" and update _redirects
   var SOLD_OUT = false;  // set to true when all seatings are full: buttons switch to the waitlist
   var PRESS_EMAIL = "casatinkuylv@gmail.com";  // e.g. press@casatinkuy.com
 
@@ -179,6 +179,24 @@
     nlTel: "Teléfono (opcional)",
     nlMsg: "Déjanos un mensaje (opcional)"
   };
+  Object.assign(ES, {
+    navList: "Únete a la lista",
+    poLabel: "Las Vegas · Desde 2026",
+    poLede: "Gracias, Las Vegas. El 10 de noviembre, el Encuentro Nº 1 llevó el Perú a la mesa: seis tiempos, cócteles con La Diablada Pisco y una noche compartida con amigos, familia y la comunidad de la hospitalidad de Las Vegas. El Encuentro Nº 2 ya está en camino.",
+    poDate: "Lo que sigue: Encuentro Nº 2",
+    poWhere: "Fecha y lugar por anunciar. La lista se entera primero.",
+    poBtn: "Entérate primero del Nº 2",
+    poBtn2: "Encuentro Nº 1",
+    poWhy: "Cada noche de Casa Tinkuy es un encuentro: una mesa, una cultura, una noche de cocina, coctelería y música. La primera fue el Perú.",
+    poNlS: "El Encuentro Nº 2 ya está en camino. Únete a la lista y conoce la fecha y el lugar antes que nadie.",
+    poELabel: "Martes 10 de noviembre de 2026 · Gracias",
+    poENote: "<strong>Este encuentro ya se realizó.</strong> Gracias a cada invitado, aliado y miembro de nuestro equipo que hizo posible la primera noche de Casa Tinkuy. Pronto compartiremos las fotos y las historias de la noche.",
+    poRsLabel: "Lo que sigue",
+    poRsTitle: "El Encuentro Nº 2 <em>ya está en camino</em>",
+    poRsText: "Las reservas para el Encuentro Nº 1 están cerradas. Únete a la lista para conocer primero la próxima fecha y el lugar.",
+    poRsBtn: "Únete a la lista",
+    enUp: "Próximamente"
+  });
   var EN = { wlJoin: "Join the waitlist", soTitle: "The dinner is <em>fully booked</em>", soText: "Join the waitlist and we'll let you know if a seat opens up. Walk-ins are still welcome at the bar for cocktails.", wlOk: "You're on the waitlist. We'll write to you if a seat opens up.", rsGo: "Reserve your seat", f6k: "Contact", heroGo: "Reserve your seat", nlOk: "You're on the list. You'll be first to know where the hummingbird lands.", nlErr: "Something went wrong. Please try again, or email casatinkuylv@gmail.com." };
   document.querySelectorAll("[data-i18n]").forEach(function (el) { EN[el.dataset.i18n] = el.innerHTML; });
   document.querySelectorAll("[data-i18n-ph]").forEach(function (el) { EN[el.dataset.i18nPh] = el.placeholder; });
